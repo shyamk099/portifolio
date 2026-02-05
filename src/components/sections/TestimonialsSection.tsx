@@ -21,12 +21,11 @@ export function TestimonialsSection({
   subtitle,
   testimonials,
 }: TestimonialsSectionProps) {
-  if (testimonials.length === 0) return null;
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   useEffect(() => {
-    if (!emblaApi) return;
+    if (!emblaApi || testimonials.length === 0) return;
     const onSelect = () => setSelectedIndex(emblaApi.selectedScrollSnap());
     emblaApi.on("select", onSelect);
     onSelect();
@@ -36,7 +35,9 @@ export function TestimonialsSection({
     }, 6000);
 
     return () => clearInterval(interval);
-  }, [emblaApi]);
+  }, [emblaApi, testimonials.length]);
+
+  if (testimonials.length === 0) return null;
 
   return (
     <section id="testimonials" data-aos="fade-up" className="w-full">
