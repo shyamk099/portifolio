@@ -15,7 +15,7 @@ interface AboutSectionProps {
 export function AboutSection({ title, description, timeline }: AboutSectionProps) {
   return (
     <section id="about" data-aos="fade-up" className="w-full">
-      <Column fillWidth gap="xl" paddingY="72" paddingX="l">
+      <Column fillWidth gap="xl" paddingY="64" paddingX="l">
         <Row fillWidth s={{ direction: "column" }} gap="24" horizontal="between">
           <Column gap="16" maxWidth="m">
             <Heading as="h2" variant="display-strong-s" className="text-balance">

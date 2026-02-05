@@ -129,7 +129,7 @@ export function ProjectsSection({ title, subtitle, projects }: ProjectsSectionPr
 
   return (
     <section id="projects" data-aos="fade-up" className="w-full">
-      <Column fillWidth gap="xl" paddingY="72" paddingX="l">
+      <Column fillWidth gap="xl" paddingY="64" paddingX="l">
         <Column gap="12" maxWidth="m">
           <Heading as="h2" variant="display-strong-s">
             {title}

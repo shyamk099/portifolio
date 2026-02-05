@@ -41,7 +41,7 @@ export function TestimonialsSection({
 
   return (
     <section id="testimonials" data-aos="fade-up" className="w-full">
-      <Column fillWidth gap="xl" paddingY="72" paddingX="l">
+      <Column fillWidth gap="xl" paddingY="64" paddingX="l">
         <Column gap="12" maxWidth="m">
           <Heading as="h2" variant="display-strong-s">
             {title}
