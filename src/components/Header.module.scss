@@ -8,6 +8,15 @@
     mask-size: 100% 100%;
 }
 
+.position :global(button) {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.position :global(button:hover) {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px -18px rgba(124, 108, 255, 0.6);
+}
+
 @media (max-width: breakpoints.$s) {
     .position {
         top: auto;

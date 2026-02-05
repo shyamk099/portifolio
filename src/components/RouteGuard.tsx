@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { routes, protectedRoutes } from "@/resources";
 import { Flex, Spinner, Button, Heading, Column, PasswordInput } from "@once-ui-system/core";
 import NotFound from "@/app/not-found";
+import { PageTransition } from "@/components/animations/PageTransition";
 
 interface RouteGuardProps {
   children: React.ReactNode;
@@ -108,7 +109,7 @@ const RouteGuard: React.FC<RouteGuardProps> = ({ children }) => {
     );
   }
 
-  return <>{children}</>;
+  return <PageTransition>{children}</PageTransition>;
 };
 
 export { RouteGuard };

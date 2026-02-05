@@ -1,0 +1,170 @@
+{
+  "basics": {
+    "name": "Madhu Shyam Sundar Reddy Kota",
+    "label": "Certified Data Engineer",
+    "email": "SHYAMSHS2002@GMAIL.COM",
+    "phone": "+91 76719 29289",
+    "location": "Asia/Kolkata",
+    "timezone": "Asia/Kolkata",
+    "locationLabel": "Hyderabad, India",
+    "summary": "Certified Data Engineer with experience designing and maintaining scalable data pipelines using PySpark, SQL, Databricks, and AWS. Skilled in building cloud-native data platforms, optimizing data processing workflows through Delta Lake architectures, and implementing robust data integration frameworks. Experienced in Generative AI and LLM-based analytics with hands-on expertise in Amazon Bedrock, LangChain, and RAG. Proven ability to reduce infrastructure costs, automate manual processes, and deliver maintainable solutions that support data-driven decision-making across manufacturing and analytics domains.",
+    "headline": "Building data platforms that scale",
+    "subline": "I design cloud-native pipelines and LLM-powered analytics that turn raw data into actionable, trusted insights.",
+    "avatar": "/images/avatar.jpg",
+    "highlights": ["Data Platforms", "PySpark + Delta Lake", "Generative AI"],
+    "resumeUrl": "/resume.pdf"
+  },
+  "about": {
+    "title": "About",
+    "description": "Certified Data Engineer focused on scalable data platforms, reliable pipelines, and AI-assisted analytics. I specialize in PySpark, Databricks, and AWS data services, and I enjoy building LLM-powered tools that help teams query and understand data faster."
+  },
+  "skills": [
+    {
+      "name": "PySpark & Delta Lake",
+      "level": 92,
+      "keywords": ["ETL", "Medallion Architecture", "Optimization"]
+    },
+    {
+      "name": "Databricks",
+      "level": 88,
+      "keywords": ["SQL Warehousing", "Unity Catalog", "Jobs"]
+    },
+    {
+      "name": "AWS Data Services",
+      "level": 90,
+      "icon": "globe",
+      "keywords": ["S3", "EMR Serverless", "Redshift", "Lambda"]
+    },
+    {
+      "name": "SQL & Data Modeling",
+      "level": 94,
+      "keywords": ["Fact/Dim Modeling", "Performance", "Data Quality"]
+    },
+    {
+      "name": "Generative AI / RAG",
+      "level": 82,
+      "icon": "rocket",
+      "keywords": ["Amazon Bedrock", "LangChain", "Prompt Engineering"]
+    },
+    {
+      "name": "Python",
+      "level": 90,
+      "keywords": ["FastAPI", "Pandas", "PyYAML"]
+    }
+  ],
+  "work": [
+    {
+      "company": "INAAS (Insightful-Service)",
+      "position": "Software Engineer, Info Services",
+      "startDate": "Jan 2024",
+      "endDate": "Present",
+      "summary": "Developed an AI-powered analytics agent that converts natural language questions into SQL queries and delivers real-time insights for non-technical users.",
+      "highlights": [
+        "Achieved 90% query accuracy with response times under 30 seconds using Amazon Bedrock (Nova), LangChain, and RAG.",
+        "Designed a multi-warehouse query engine supporting Databricks SQL and PostgreSQL with S3 as a data lake backend.",
+        "Implemented session-aware memory in DynamoDB enabling multi-turn analytics conversations.",
+        "Deployed a serverless production-ready architecture with AWS AppRunner (backend) and AWS Amplify (frontend)."
+      ]
+    },
+    {
+      "company": "HapPy Inc.",
+      "position": "Data Engineer (Manufacturing Analytics)",
+      "startDate": "2023",
+      "endDate": "2024",
+      "summary": "Built an end-to-end data pipeline to centralize and analyze razor manufacturing data, enabling insights for production optimization and quality control.",
+      "highlights": [
+        "Engineered a medallion architecture (Raw → Silver → Gold) processing 2GB daily from 4 source types on EMR Serverless.",
+        "Built 8 data assets (7 dimension tables, 8 fact tables, 5 stored procedures, 10 views) in Redshift powering 4 Power BI dashboards.",
+        "Automated data validation rules and schema drift handling, saving 10-20 hours/week of manual analysis.",
+        "Reduced infrastructure costs using Delta Lake on S3 and on-demand EMR Serverless with GitHub Actions CI/CD."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Kalasalingam Academy of Research and Education",
+      "studyType": "B.Tech",
+      "area": "Electronics and Communication Engineering",
+      "endDate": "May 2023",
+      "gpa": "8.67"
+    }
+  ],
+  "projects": [
+    {
+      "name": "INAAS AI Analytics Agent",
+      "description": "Natural language to SQL analytics agent for enterprise data teams.",
+      "summary": "Built an LLM-powered analytics agent with context-aware SQL generation and multi-warehouse support.",
+      "role": "Software Engineer",
+      "technologies": [
+        "Python",
+        "SQL",
+        "LangChain",
+        "Amazon Bedrock (Nova)",
+        "Databricks SQL",
+        "PostgreSQL",
+        "AWS S3",
+        "DynamoDB",
+        "RAG",
+        "AWS AppRunner",
+        "AWS Amplify"
+      ],
+      "images": [
+        "/images/projects/project-01/cover-01.jpg",
+        "/images/projects/project-01/cover-02.jpg",
+        "/images/projects/project-01/cover-03.jpg"
+      ]
+    },
+    {
+      "name": "Manufacturing Analytics Platform",
+      "description": "End-to-end manufacturing data platform for quality and production analytics.",
+      "summary": "Delivered a medallion architecture on EMR Serverless with Redshift data marts and Power BI dashboards.",
+      "role": "Data Engineer",
+      "technologies": [
+        "PySpark",
+        "AWS EMR Serverless",
+        "S3",
+        "Delta Lake",
+        "Redshift",
+        "SQL",
+        "Power BI"
+      ],
+      "images": [
+        "/images/projects/project-01/cover-04.jpg",
+        "/images/projects/project-01/image-01.jpg",
+        "/images/projects/project-01/image-02.jpg"
+      ]
+    },
+    {
+      "name": "Synthetic Data Generator CLI",
+      "description": "LLM-powered CLI that generates realistic CSV datasets from YAML schemas.",
+      "summary": "Created an open-source tool that produces 10K records/minute with validation rules and adapter-based prompt generation.",
+      "role": "Creator",
+      "technologies": [
+        "Python",
+        "LangChain",
+        "Groq",
+        "Hugging Face",
+        "GitHub Actions",
+        "PyPI"
+      ],
+      "images": [
+        "/images/projects/project-01/image-03.jpg",
+        "/images/projects/project-01/cover-01.jpg",
+        "/images/projects/project-01/cover-02.jpg"
+      ]
+    }
+  ],
+  "testimonials": [],
+  "social": [
+    {
+      "name": "LinkedIn",
+      "icon": "linkedin",
+      "url": "https://www.linkedin.com/in/shyam-kota-9435881a2"
+    },
+    {
+      "name": "Email",
+      "icon": "email",
+      "url": "mailto:SHYAMSHS2002@GMAIL.COM"
+    }
+  ]
+}
