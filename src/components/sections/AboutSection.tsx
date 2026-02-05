@@ -28,7 +28,7 @@ export function AboutSection({ title, description, timeline }: AboutSectionProps
           <Column className="relative" gap="24" maxWidth="m">
             <div className="absolute left-4 top-3 h-full w-px bg-white/10" />
             {timeline.map((item) => (
-              <Row key={`${item.title}-${item.timeframe}`} gap="16" align="flex-start">
+              <Row key={`${item.title}-${item.timeframe}`} gap="16" vertical="start">
                 <div className="mt-2 h-3 w-3 rounded-full bg-white/80 shadow-glow" />
                 <Column gap="8" className="glass-panel rounded-2xl px-5 py-4">
                   <Text variant="label-default-s" onBackground="neutral-weak">

@@ -36,32 +36,11 @@ const display: DisplayConfig = {
 // Set password in the .env file, refer to .env.example
 const protectedRoutes: ProtectedRoutesConfig = {};
 
-// Import and set font for each variant
-import { Space_Grotesk, Manrope, JetBrains_Mono } from "next/font/google";
-
-const heading = Space_Grotesk({
-  variable: "--font-heading",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const body = Manrope({
-  variable: "--font-body",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const label = Manrope({
-  variable: "--font-label",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const code = JetBrains_Mono({
-  variable: "--font-code",
-  subsets: ["latin"],
-  display: "swap",
-});
+// Fonts are set via CSS classes to avoid build-time font fetching.
+const heading = { variable: "font-heading" } as FontsConfig["heading"];
+const body = { variable: "font-body" } as FontsConfig["body"];
+const label = { variable: "font-label" } as FontsConfig["label"];
+const code = { variable: "font-code" } as FontsConfig["code"];
 
 const fonts: FontsConfig = {
   heading: heading,
@@ -197,7 +176,7 @@ const sameAs: SameAsConfig = social.reduce((acc, item) => {
   const key = item.name.toLowerCase();
   acc[key] = item.link;
   return acc;
-}, {} as SameAsConfig);
+}, {} as Record<string, string>) as SameAsConfig;
 
 // social sharing configuration for blog posts
 const socialSharing: SocialSharingConfig = {
