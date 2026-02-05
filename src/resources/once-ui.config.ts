@@ -14,7 +14,9 @@ import {
 import { home, person, social } from "./index";
 
 // IMPORTANT: Replace with your own domain address - it's used for SEO in meta tags and schema
-const baseURL: string = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+const baseURL: string =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000");
 
 const routes: RoutesConfig = {
   "/": true,
